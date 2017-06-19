@@ -140,7 +140,7 @@ def resize(vec, size):
       # Check that the output dims are multiples of input dims
       assert(size[0] % vec.shape[0] == 0)
       assert(size[1] % vec.shape[1] == 0)
-      vec_resized = np.tile(vec, (size[0] / vec.shape[0], size[1] / vec.shape[1]))
+      vec_resized = np.tile(vec, (size[0] // vec.shape[0], size[1] // vec.shape[1]))
    return vec_resized
 
 
