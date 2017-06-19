@@ -6,6 +6,8 @@ env:
 python:
    - "2.7"
    - "3.5"
+cache:
+   - pip
 
 addons:
    apt:
