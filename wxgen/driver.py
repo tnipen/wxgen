@@ -102,7 +102,6 @@ def main(argv):
          if args.end_date is None:
             end_date = wxgen.util.unixtime_to_date(np.max(db.inittimes))
          dates = np.array(wxgen.util.parse_dates("%d:%d" % (start_date, end_date)))
-         print start_date, end_date
 
          # Figure out which time indices are possible starting dates, by finding dates that have the
          # same day of year as the first date of the allowable dates

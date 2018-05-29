@@ -389,8 +389,7 @@ def clean(variable, dtype=None):
       np.array: masked values are converted to np.nan
    """
    if dtype is None:
-      if variable.dtype == "int64":
-         print 1
+      if variable.dtype in ["int", "int32", "int64"]:
          values = np.ma.filled(variable[:].astype(float), np.nan)
       else:
          values = np.ma.filled(variable[:], np.nan)

@@ -359,7 +359,6 @@ class Variance(Plot):
       self._finish_plot()
 
    def compute_sim_variance(self, array, scales):
-      print array.shape
       """
       Arguments:
          array (np.array): 2D array (time, member)
